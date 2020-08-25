@@ -93,7 +93,7 @@ if __name__ == "__main__":
     parser.add_argument('changes')
 
     if len(sys.argv) < 2:
-        sys.stderr.write('Usage: ')
+        print('Usage: python3 mixtape_editor.py mixtape.json changes')
         sys.exit(1)
     else:
         args = parser.parse_args()
