@@ -1,7 +1,7 @@
 import argparse
 import json
-import os
 
+import os
 import sys
 
 
@@ -90,7 +90,7 @@ if __name__ == "__main__":
         description=
         'Ingest mixtape.json and a changes file, output those changes in output.json file')
 
-    parser.add_argument('mixtape', help="the mixtape file to ingets")
+    parser.add_argument('mixtape', help="the mixtape file to ingets ex. mixtape.json")
     parser.add_argument('changes', help="the changes file to ingest")
 
 

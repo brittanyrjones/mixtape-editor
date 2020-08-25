@@ -2,7 +2,6 @@
 
 Ingest mixtape.json and a changesfile. The changesfile should include multiple changes in a single file: Add a new playlist; the playlist should contain at least one song. Remove a playlist. Add an existing song to an existing playlist. Output output.json using the same structure as mixtape.json with the changes applied. Add a README describing how you would scale this application to handle very large input files and/or very large changes files.
 
-
 ## Installation
 
 Clone this project:
@@ -21,7 +20,6 @@ Now you can run the script:
 ```
 $ python3 mixtape_editor.py mixtape.json changes
 ```
- 
  
  # Scaling Up
  
@@ -60,7 +58,8 @@ First of all, I would start by writing tests. It would be important to validate 
  
  # In Closing
 Thank you for taking the time to check out my code! There were so many ways to do this depending on
-so many factors (memory, space, budget, throughput, etc), and I appreciate you
-taking the time to look through my coding lense. I look forward to hearing from you and the team 
+so many factors (memory, space, budget, read/write/throughput, etc), and I appreciate you
+taking the time to look see this code from my point of view. I look forward to hearing from you and the team soon, 
+and take care!
  
 *Brittany Jones
