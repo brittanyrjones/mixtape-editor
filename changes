@@ -1,0 +1,29 @@
+{
+    "changes" : [
+      {
+        "action": "delete",
+        "type": "playlists",
+        "id": "1"
+      },
+      {
+        "action": "delete",
+        "type": "users",
+        "id": "7"
+      },
+      {
+        "id" : "1",
+        "action": "add",
+        "type": "songs",
+        "playlist_id": "3"
+      },
+      {
+        "id" : "199",
+        "action": "add",
+        "type": "playlists", 
+        "user_id": "2", 
+        "song_ids": [
+            "8"
+        ]
+      }
+    ]
+  }
