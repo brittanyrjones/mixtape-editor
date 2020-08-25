@@ -89,23 +89,20 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(
         description=
         '')
+        
     parser.add_argument('mixtape')
     parser.add_argument('changes')
 
-    if len(sys.argv) < 2:
-        print('Usage: python3 mixtape_editor.py mixtape.json changes')
-        sys.exit(1)
-    else:
-        args = parser.parse_args()
 
-        mixtape_editor = Mixtape_Editor()
+    args = parser.parse_args()
 
-        mixtape_data = mixtape_editor.get_data(args.mixtape)
-        changes_data = mixtape_editor.get_data(args.changes)
+    mixtape_editor = Mixtape_Editor()
 
-        for key, value in changes_data.items():
-            for change_item in value:
-                mixtape_editor.run_mixtape_object_edits(mixtape_data, change_item)
+    mixtape_data = mixtape_editor.get_data(args.mixtape)
+    changes_data = mixtape_editor.get_data(args.changes)
 
-        mixtape_editor.output_data(mixtape_data, 'output.json')   
-    
+    for key, value in changes_data.items():
+        for change_item in value:
+            mixtape_editor.run_mixtape_object_edits(mixtape_data, change_item)
+
+    mixtape_editor.output_data(mixtape_data, 'output.json')   
