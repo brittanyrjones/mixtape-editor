@@ -89,8 +89,8 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(
         description=
         '')
-    parser.add_argument('mixtape', required=True)
-    parser.add_argument('changes', required=True)
+    parser.add_argument('mixtape')
+    parser.add_argument('changes')
 
     if len(sys.argv) < 2:
         sys.stderr.write('Usage: ')
