@@ -8,7 +8,7 @@ import sys
 class Mixtape_Editor:
     # When refactoring for optimal code, I would initialize my class with the changes and mixtape data, and objects needed
     # for logging. I would also use way more helper functions, for typechecking and to simplify
-    # adding, deleting, and updating items.
+    # adding, deleting, and updating items. I would also use more helper funcs to break up duties within a single func.
     # I would also be more specific about the structure of each input object for the class functions
 
     # ex.
@@ -88,10 +88,10 @@ class Mixtape_Editor:
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(
         description=
-        '')
-        
-    parser.add_argument('mixtape')
-    parser.add_argument('changes')
+        'Ingest mixtape.json and a changes file, output those changes in output.json file')
+
+    parser.add_argument('mixtape', help="the mixtape file to ingets")
+    parser.add_argument('changes', help="the changes file to ingest")
 
 
     args = parser.parse_args()
